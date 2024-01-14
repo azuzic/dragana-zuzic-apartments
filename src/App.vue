@@ -1,38 +1,37 @@
 <template>
-   <div class="bg-slate-900 h-screen w-screen flex bg">
-        <div class="lg:basis-1/6 sm:basis-0"></div>
+	<div class="relative wh-full | transition-300 | Poppins text-slate-200">
 
-        <div class="flex-grow main px-4">
-            <Menu />
-            <RouterView />
-        </div>
+		<DZ_BG/>
+        <DZ_Title/>
+        <DZ_Menu/>
+        <DZ_Carousel/>
 
-        <div class="lg:basis-1/6 sm:basis-0"></div>
-    </div>
+		<div class="min-h-full flex flex-col-reverse absolute w-full">
+            <DZ_BG2/>
+
+			<router-view class="" v-slot="{ Component, route }">
+				<transition name="fade">
+					<component
+						class="absolute wh-full"
+						:is="Component"
+						:key="route.path" /> 
+				</transition>
+			</router-view>
+
+		</div>
+
+	</div>
 </template>
 
 <script>
-import { RouterView } from 'vue-router'
-import Menu from './components/Menu.vue';
+import DZ_BG from '@/components/App/DZ_BG.vue';
+import DZ_BG2 from '@/components/App/DZ_BG2.vue';
+import DZ_Title from '@/components/App/DZ_Title.vue';
+import DZ_Menu from "@/components/App/DZ_Menu.vue";
+import DZ_Carousel from '@/components/App/DZ_Carousel.vue';
 
 export default {
-    components: {
-        Menu
-    }
-}
+    name: "App",
+    components: { DZ_BG, DZ_BG2, DZ_Title, DZ_Menu, DZ_Carousel }
+};
 </script>
-
-<style scoped lang="scss">
-.bg {
-    background-image: url("src/assets/images/background.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-}
-.main {
-  background-color: rgba(212, 241, 244, 0.5);
-  border-left: solid 1px rgba(128, 171, 176,0.6);
-  border-right: solid 1px rgba(128, 171, 176,0.6);
-  box-shadow: 0 0 1px rgba(128, 171, 176, 0.2),
-              0 0 4px rgba(128, 171, 176, 0.4);
-}
-</style>
