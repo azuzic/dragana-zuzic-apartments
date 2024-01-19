@@ -58,7 +58,7 @@ let apartments = [
 
                 <div class="relative drop-shadow-sm transition-500 bg-cover-center
                     w-full aspect-square cursor-pointer hover:scale-110"
-                    :style="'background-image: url('+app.img+');'">
+                    :style="'background-image: url('+app.img+'l.jpg);'">
                 </div>  
             </div>
         </div>

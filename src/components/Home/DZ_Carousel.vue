@@ -1,3 +1,6 @@
+<script setup>
+import { kamenjak } from "@/stores/images.js";
+</script>
 <template>
     <div class="flex flex-col lg:flex-row sm:flex w-full gap-8">
         <DZ_Block>
@@ -11,7 +14,7 @@
             <div class="absolute w-4 h-full top-0 right-0 sm:bg-gradient-to-l from-slate-50 via-slate-50 to-transparent z-10"></div>
             <carousel class="relative h-fit w-full flex-center carousel1" :pauseAutoplayOnHover="true"
                 :items-to-show="1" :wrapAround="true" :autoplay="2500" :transition="750">
-                <slide v-for="slide in images" :key="slide">
+                <slide v-for="slide in kamenjak" :key="slide">
                     <div class="h-56 w-full rounded-lg px-4 mx-4 bg-cover-center"
                         :style="'background-image: url('+slide+');'">
                     </div>
@@ -52,15 +55,6 @@ export default {
         Pagination,
         Navigation, 
     },
-    data() {
-        return {
-            images: [
-                'https://www.venezialines.com/wp-content/uploads/2021/01/ISTRA-Rt-Kamenjak-DJI_0249_ACR-aleksandar-gospic.jpg',
-                'https://s27363.pcdn.co/wp-content/uploads/2018/09/Kamenjak.jpg.optimal.jpg',
-                'https://www.venezialines.com/wp-content/uploads/2021/01/01-ISTRA-Rt-Kamenjak-DJI_0184-Pano_ACR-aleksandar-gospic.jpg',
-            ]
-        }
-    }
 };
 </script>
 <style lang="scss">

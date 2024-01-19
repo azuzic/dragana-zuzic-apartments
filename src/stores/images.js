@@ -1,149 +1,294 @@
 
-// AZZURO
-import azzuro_1 from "@/assets/images/azzuro/azzuro_1.jpg"
-import azzuro_2 from "@/assets/images/azzuro/azzuro_2.jpg"
-import azzuro_3 from "@/assets/images/azzuro/azzuro_3.jpg"
-import azzuro_4 from "@/assets/images/azzuro/azzuro_4.jpg"
-import azzuro_5 from "@/assets/images/azzuro/azzuro_5.jpg"
-import azzuro_6 from "@/assets/images/azzuro/azzuro_6.jpg"
-import azzuro_7 from "@/assets/images/azzuro/azzuro_7.jpg"
-import azzuro_8 from "@/assets/images/azzuro/azzuro_8.jpg"
-import azzuro_9 from "@/assets/images/azzuro/azzuro_9.jpg"
-import azzuro_10 from "@/assets/images/azzuro/azzuro_10.jpg"
-import azzuro_11 from "@/assets/images/azzuro/azzuro_11.jpg"
-import azzuro_12 from "@/assets/images/azzuro/azzuro_12.jpg"
-import azzuro_13 from "@/assets/images/azzuro/azzuro_13.jpg"
-// GARDEN
-import garden_1 from "@/assets/images/garden/garden_1.jpg"
-import garden_2 from "@/assets/images/garden/garden_2.jpg"
-import garden_3 from "@/assets/images/garden/garden_3.jpg"
-import garden_4 from "@/assets/images/garden/garden_4.jpg"
-import garden_5 from "@/assets/images/garden/garden_5.jpg"
-import garden_6 from "@/assets/images/garden/garden_6.jpg"
-import garden_7 from "@/assets/images/garden/garden_7.jpg"
-import garden_8 from "@/assets/images/garden/garden_8.jpg"
-import garden_9 from "@/assets/images/garden/garden_9.jpg"
-import garden_10 from "@/assets/images/garden/garden_10.jpg"
-import garden_11 from "@/assets/images/garden/garden_11.jpg"
-import garden_12 from "@/assets/images/garden/garden_12.jpg"
-import garden_13 from "@/assets/images/garden/garden_13.jpg"
-import garden_14 from "@/assets/images/garden/garden_14.jpg"
-import garden_15 from "@/assets/images/garden/garden_15.jpg"
-import garden_16 from "@/assets/images/garden/garden_16.jpg"
-import garden_17 from "@/assets/images/garden/garden_17.jpg"
-import garden_18 from "@/assets/images/garden/garden_18.jpg"
-import garden_19 from "@/assets/images/garden/garden_19.jpg"
-import garden_20 from "@/assets/images/garden/garden_20.jpg"
-// KAMIN
-import kamin_1 from "@/assets/images/kamin/kamin_1.jpg"
-import kamin_2 from "@/assets/images/kamin/kamin_2.jpg"
-import kamin_3 from "@/assets/images/kamin/kamin_3.jpg"
-import kamin_4 from "@/assets/images/kamin/kamin_4.jpg"
-import kamin_5 from "@/assets/images/kamin/kamin_5.jpg"
-import kamin_6 from "@/assets/images/kamin/kamin_6.jpg"
-import kamin_7 from "@/assets/images/kamin/kamin_7.jpg"
-import kamin_8 from "@/assets/images/kamin/kamin_8.jpg"
-import kamin_9 from "@/assets/images/kamin/kamin_9.jpg"
-import kamin_10 from "@/assets/images/kamin/kamin_10.jpg"
-// SMOKVA
-import smokva_1 from "@/assets/images/smokva/smokva_1.jpg"
-import smokva_2 from "@/assets/images/smokva/smokva_2.jpg"
-import smokva_3 from "@/assets/images/smokva/smokva_3.jpg"
-import smokva_4 from "@/assets/images/smokva/smokva_4.jpg"
-import smokva_5 from "@/assets/images/smokva/smokva_5.jpg"
-import smokva_6 from "@/assets/images/smokva/smokva_6.jpg"
-import smokva_7 from "@/assets/images/smokva/smokva_7.jpg"
-// SOLE
-import sole_1 from "@/assets/images/sole/sole_1.jpg"
-import sole_2 from "@/assets/images/sole/sole_2.jpg"
-import sole_3 from "@/assets/images/sole/sole_3.jpg"
-import sole_4 from "@/assets/images/sole/sole_4.jpg"
-import sole_5 from "@/assets/images/sole/sole_5.jpg"
-import sole_6 from "@/assets/images/sole/sole_6.jpg"
-import sole_7 from "@/assets/images/sole/sole_7.jpg"
-// TERASA
-import terasa_1 from "@/assets/images/terasa/terasa_1.jpg"
-import terasa_2 from "@/assets/images/terasa/terasa_2.jpg"
-import terasa_3 from "@/assets/images/terasa/terasa_3.jpg"
-import terasa_4 from "@/assets/images/terasa/terasa_4.jpg"
-import terasa_5 from "@/assets/images/terasa/terasa_5.jpg"
-import terasa_6 from "@/assets/images/terasa/terasa_6.jpg"
+const kamenjak = [
+    "https://www.placesofjuma.com/wp-content/uploads/2018/04/Premantura-kamenjak-14.jpg",
+    "https://kamenjak.hr/theme-assets//img/img_banner.jpg",
+    "https://www.medulinriviera.info/wp-content/uploads/2021/05/TZOMWEB-PanoramaKamenjak-Studio11-scaled.jpg",
+];
+
+const garden = [
+   "https://i.imgur.com/4sYFmmR",
+   "https://i.imgur.com/SArsUIb",
+   "https://i.imgur.com/108H7ac",
+   "https://i.imgur.com/Cn9ogmq",
+   "https://i.imgur.com/Hfjizka",
+   "https://i.imgur.com/LeXBqPZ",
+   "https://i.imgur.com/UhOyphs",
+   "https://i.imgur.com/VZz10kk",
+   "https://i.imgur.com/nEl2ZGI",
+   "https://i.imgur.com/hq11pvd",
+   "https://i.imgur.com/aDPCSz6",
+   "https://i.imgur.com/zsBAlcx",
+   "https://i.imgur.com/Zukowad",
+   "https://i.imgur.com/DQekw5e",
+   "https://i.imgur.com/U6rzZ2n",
+   "https://i.imgur.com/RmdCd3f",
+   "https://i.imgur.com/9bHl6QL",
+   "https://i.imgur.com/9FrdKLe",
+   "https://i.imgur.com/U5bjoaO",
+   "https://i.imgur.com/rodPklw",
+   "https://i.imgur.com/srtO9NL",
+   "https://i.imgur.com/qk1nTEn",
+   "https://i.imgur.com/0Uew2UA",
+   "https://i.imgur.com/06cTZ33",
+   "https://i.imgur.com/NBzk86g",
+   "https://i.imgur.com/AqUfKmF",
+   "https://i.imgur.com/09nF8lW",
+   "https://i.imgur.com/s2E4JDp",
+   "https://i.imgur.com/7OOVUCZ",
+   "https://i.imgur.com/39mLlaO",
+   "https://i.imgur.com/7UI0ECN",
+   "https://i.imgur.com/jtLWhe4",
+   "https://i.imgur.com/tAYRy9J",
+   "https://i.imgur.com/PczzqlS",
+   "https://i.imgur.com/DsuhM6l",
+   "https://i.imgur.com/n9tA6K4",
+   "https://i.imgur.com/N7Q4urj",
+   "https://i.imgur.com/HyE2pid",
+   "https://i.imgur.com/NUpVoV1",
+   "https://i.imgur.com/z6SkHy6",
+   "https://i.imgur.com/e6n2o3l",
+   "https://i.imgur.com/ICW6hpt",
+   "https://i.imgur.com/ekOXpzI",
+   "https://i.imgur.com/T1bkUTF",
+   "https://i.imgur.com/mjV60Zs",
+   "https://i.imgur.com/Cha4SJY",
+   "https://i.imgur.com/aM80mEv",
+   "https://i.imgur.com/VBQe3s1",
+   "https://i.imgur.com/fr9OzN2",
+   "https://i.imgur.com/4cmFOdY",
+   "https://i.imgur.com/rDRtwTm",
+   "https://i.imgur.com/UNWNArO",
+   "https://i.imgur.com/WpAlQRx",
+   "https://i.imgur.com/O5rU0Uu",
+   "https://i.imgur.com/w3LKDaJ",
+   "https://i.imgur.com/zjtbEN9",
+   "https://i.imgur.com/dNRO6to",
+   "https://i.imgur.com/fFRlbNP",
+   "https://i.imgur.com/HjCF6u8",
+   "https://i.imgur.com/fz0Mzfm",
+   "https://i.imgur.com/KAAn7X6",
+   "https://i.imgur.com/n0PrKiz",
+   "https://i.imgur.com/RnG0lgL",
+   "https://i.imgur.com/hmda6rU",
+   "https://i.imgur.com/flaKIrg",
+   "https://i.imgur.com/VkO8ixD",
+   "https://i.imgur.com/sHxgiSC",
+   "https://i.imgur.com/0TKkrZ9",
+   "https://i.imgur.com/cwbTv8N",
+   "https://i.imgur.com/rUpR4Sl",
+   "https://i.imgur.com/hLYw2dP",
+   "https://i.imgur.com/q3GDY9y",
+   "https://i.imgur.com/gpIca9i",
+   "https://i.imgur.com/2KS4KaL",
+   "https://i.imgur.com/ZHOOEML",
+   "https://i.imgur.com/qOlfEnp",
+   "https://i.imgur.com/44lPXxY",
+   "https://i.imgur.com/YS0a6XE",
+   "https://i.imgur.com/weIjbrg",
+   "https://i.imgur.com/B5GwUmZ",
+   "https://i.imgur.com/5LfhJxf",
+   "https://i.imgur.com/nx0gJoh",
+   "https://i.imgur.com/bsUIS6g",
+   "https://i.imgur.com/NjfMkml",
+   "https://i.imgur.com/RpDbLwY",
+   "https://i.imgur.com/vNnnTDR",
+   "https://i.imgur.com/vunDrFd",
+   "https://i.imgur.com/BIFtTND",
+   "https://i.imgur.com/AonJUoo",
+   "https://i.imgur.com/Ipx0UsJ",
+   "https://i.imgur.com/B3YpCED",
+   "https://i.imgur.com/rgNyQXd",
+   "https://i.imgur.com/c7w2NXm",
+   "https://i.imgur.com/5N6u6hv",
+   "https://i.imgur.com/EkmtTXV",
+   "https://i.imgur.com/rOKriC8",
+   "https://i.imgur.com/YMLGZbr",
+   "https://i.imgur.com/S4Bdu5a",
+   "https://i.imgur.com/Je05NSo",
+   "https://i.imgur.com/kMsAzid",
+   "https://i.imgur.com/wOBHihZ",
+   "https://i.imgur.com/q5hD7rq",
+   "https://i.imgur.com/HOeJRW8",
+   "https://i.imgur.com/zfeqlkj",
+   "https://i.imgur.com/i7gdb2g",
+   "https://i.imgur.com/oeeidjw",
+   "https://i.imgur.com/Sqd9iV6",
+   "https://i.imgur.com/bnKjYko",
+   "https://i.imgur.com/sHkjU3L",
+   "https://i.imgur.com/ekAr7dI",
+   "https://i.imgur.com/yCH2QjD",
+   "https://i.imgur.com/79XOTsW",
+   "https://i.imgur.com/GnrV5Wg",
+   "https://i.imgur.com/cqV4h56",
+   "https://i.imgur.com/ZQQNUhp",
+   "https://i.imgur.com/Y1e6dK0",
+   "https://i.imgur.com/JFDvxq0",
+   "https://i.imgur.com/0Eb9fJj",
+   "https://i.imgur.com/73xn29W",
+   "https://i.imgur.com/3HRGqwa",
+   "https://i.imgur.com/NjSGfzo",
+   "https://i.imgur.com/ti3gJY7",
+   "https://i.imgur.com/JBE2Emv",
+   "https://i.imgur.com/MfPDGNZ",
+   "https://i.imgur.com/JvHqfsB",
+   "https://i.imgur.com/8GOBV6b",
+   "https://i.imgur.com/m3vP2kY",
+];
 
 const apartments_images = {
     azzuro: [
-        azzuro_1,
-        azzuro_2,
-        azzuro_3,
-        azzuro_4,
-        azzuro_5,
-        azzuro_6,
-        azzuro_7,
-        azzuro_8,
-        azzuro_9,
-        azzuro_10,
-        azzuro_11,
-        azzuro_12,
-        azzuro_13
-    ],
-    garden: [
-        garden_1,
-        garden_2,
-        garden_3,
-        garden_4,
-        garden_5,
-        garden_6,
-        garden_7,
-        garden_8,
-        garden_9,
-        garden_10,
-        garden_11,
-        garden_12,
-        garden_13,
-        garden_14,
-        garden_15,
-        garden_16,
-        garden_17,
-        garden_18,
-        garden_19,
-        garden_20
+        "https://i.imgur.com/Adw3gUs",
+        "https://i.imgur.com/QCKiIFm",
+        "https://i.imgur.com/6nuHPEB",
+        "https://i.imgur.com/HxCkA4B",
+        "https://i.imgur.com/N9jO3GJ",
+        "https://i.imgur.com/vHRfHBw",
+        "https://i.imgur.com/fdF7Htk",
+        "https://i.imgur.com/VrIdxjm",
+        "https://i.imgur.com/1flQYJ9",
+        "https://i.imgur.com/bdFdXWr",
+        "https://i.imgur.com/NCfDxSz",
+        "https://i.imgur.com/vXi7PaX",
+        "https://i.imgur.com/yiqTmCV",
+        "https://i.imgur.com/90aopTn",
+        "https://i.imgur.com/4p9lZO5",
+        "https://i.imgur.com/mvVIsxR",
+        "https://i.imgur.com/MPcwphm",
+        "https://i.imgur.com/qFS2gG5",
+        "https://i.imgur.com/6E5diyX",
+        "https://i.imgur.com/YzzFTfm",
+        "https://i.imgur.com/qw8ETFF"
     ],
     kamin: [
-        kamin_1,
-        kamin_2,
-        kamin_3,
-        kamin_4,
-        kamin_5,
-        kamin_6,
-        kamin_7,
-        kamin_8,
-        kamin_9,
-        kamin_10
+       "https://i.imgur.com/3uRaEdM",
+       "https://i.imgur.com/Odz9x5N",
+       "https://i.imgur.com/0YeUtp5",
+       "https://i.imgur.com/6mhh7KN",
+       "https://i.imgur.com/cLtut9e",
+       "https://i.imgur.com/SC9Fww6",
+       "https://i.imgur.com/CCjy2Wb",
+       "https://i.imgur.com/dzyBzNQ",
+       "https://i.imgur.com/RLcantw",
+       "https://i.imgur.com/w6J5Qai",
+       "https://i.imgur.com/iVXLk1g",
+       "https://i.imgur.com/NtrrSH3",
+       "https://i.imgur.com/nikn9eK",
+       "https://i.imgur.com/I8hwqIJ",
+       "https://i.imgur.com/dJ09CAD",
+       "https://i.imgur.com/pqQQJhf",
+       "https://i.imgur.com/V66QdSL",
+       "https://i.imgur.com/b16jlqj",
+       "https://i.imgur.com/RTIiIJe",
+       "https://i.imgur.com/T6OziB1",
+       "https://i.imgur.com/RvqJKnA",
+       "https://i.imgur.com/fmvm8mg",
+       "https://i.imgur.com/dnyvj8j",
+       "https://i.imgur.com/Q1kxBp6",
+       "https://i.imgur.com/KuSVlXT",
+       "https://i.imgur.com/1xpxNPo",
+       "https://i.imgur.com/FcnZUMU",
+       "https://i.imgur.com/URV9OBC",
+       "https://i.imgur.com/mzZAfCS",
+       "https://i.imgur.com/TsVd5GP",
+       "https://i.imgur.com/MPQ5ksA",
+       "https://i.imgur.com/tSwtvQF",
+       "https://i.imgur.com/JEKmMP6",
+       "https://i.imgur.com/uyECBJt",
+       "https://i.imgur.com/tAxdYP4",
+       "https://i.imgur.com/kabG1on",
+       "https://i.imgur.com/6LlXumw",
+       "https://i.imgur.com/EQg0QQl",
+       "https://i.imgur.com/GcmQVaO",
+       "https://i.imgur.com/uW6pCay",
+       "https://i.imgur.com/M79Wake",
+       "https://i.imgur.com/0rcTftr",
+       "https://i.imgur.com/HFGANwR",
+       "https://i.imgur.com/1IJncuZ",
+       "https://i.imgur.com/yrvZ64x",
+       "https://i.imgur.com/JOtoTPo",
+       "https://i.imgur.com/5p3vmYE",
+       "https://i.imgur.com/lHU6XGJ",
+       "https://i.imgur.com/03RNkjU",
+       "https://i.imgur.com/VeCSQni",
+       "https://i.imgur.com/Fjv58g0",
+       "https://i.imgur.com/Fw4M0oc",
+       "https://i.imgur.com/R7nY6e1",
+       "https://i.imgur.com/7J0Y4vm",
+       "https://i.imgur.com/pyiHemS",
+       "https://i.imgur.com/bdFdXWr",
     ],
     smokva: [
-        smokva_1,
-        smokva_2,
-        smokva_3,
-        smokva_4,
-        smokva_5,
-        smokva_6,
-        smokva_7
+       "https://i.imgur.com/d63GX4u",
+       "https://i.imgur.com/xHO6Jyb",
+       "https://i.imgur.com/d63GX4u",
+       "https://i.imgur.com/mYYpcIy",
+       "https://i.imgur.com/4j81ndp",
+       "https://i.imgur.com/dDTMNAh",
+       "https://i.imgur.com/Ae5LbsY",
+       "https://i.imgur.com/qsHSmkl",
+       "https://i.imgur.com/jHCbUNt",
+       "https://i.imgur.com/SUrY6Tg",
+       "https://i.imgur.com/3QW3jv5",
+       "https://i.imgur.com/3pgvsYa",
+       "https://i.imgur.com/SxFFcBc",
+       "https://i.imgur.com/rsi0SpP",
+       "https://i.imgur.com/mhzqA05",
+       "https://i.imgur.com/OYP63QY",
+       "https://i.imgur.com/MUk1E0l",
+       "https://i.imgur.com/7jlESkv",
+       "https://i.imgur.com/IrIdFeq",
+       "https://i.imgur.com/CG8xvvJ",
+       "https://i.imgur.com/Ti4w9kI",
+       "https://i.imgur.com/fAXMBt5",
+       "https://i.imgur.com/8FPXu4u",
+       "https://i.imgur.com/FczvuCM",
+       "https://i.imgur.com/Hbro2ao",
+       "https://i.imgur.com/ebQKu5Y",
     ],
     sole: [
-        sole_1,
-        sole_2,
-        sole_3,
-        sole_4,
-        sole_5,
-        sole_6,
-        sole_7
+       "https://i.imgur.com/eF6Suhp",
+       "https://i.imgur.com/hAbt4HN",
+       "https://i.imgur.com/FjuQGwv",
+       "https://i.imgur.com/joTWY5D",
+       "https://i.imgur.com/rqDi1kY",
+       "https://i.imgur.com/PkyrgUO",
+       "https://i.imgur.com/ucvdklE",
+       "https://i.imgur.com/6qujYcT",
+       "https://i.imgur.com/fkKrJXO",
     ],
     terasa: [
-        terasa_1,
-        terasa_2,
-        terasa_3,
-        terasa_4,
-        terasa_5,
-        terasa_6
+       "https://i.imgur.com/XbrOhXn",
+       "https://i.imgur.com/RHICwaN",
+       "https://i.imgur.com/muIIj6o",
+       "https://i.imgur.com/gRcj2DQ",
+       "https://i.imgur.com/j1oyelH",
+       "https://i.imgur.com/fURPqud",
+       "https://i.imgur.com/Ixs6HV7",
+       "https://i.imgur.com/iMT8OkK",
+       "https://i.imgur.com/B4hv6jZ",
+       "https://i.imgur.com/iLnNlwP",
+       "https://i.imgur.com/8fAbZBT",
+       "https://i.imgur.com/6ESEFxB",
+       "https://i.imgur.com/pK3lV9X",
+       "https://i.imgur.com/20BEvab",
+       "https://i.imgur.com/Rk6RfxM",
+       "https://i.imgur.com/ecHY6nk",
+       "https://i.imgur.com/mpmSSzo",
+       "https://i.imgur.com/9P3sGv6",
+       "https://i.imgur.com/hTcihtq",
+       "https://i.imgur.com/cltaVFO",
+       "https://i.imgur.com/XyxcDgg",
+       "https://i.imgur.com/J5GoR6w",
+       "https://i.imgur.com/b7GyEVv",
+       "https://i.imgur.com/mkTUoxU",
+       "https://i.imgur.com/yHkjLVW",
+       "https://i.imgur.com/SaPCwNz",
+       "https://i.imgur.com/XN5zuTT",
+       "https://i.imgur.com/XtkFC4N",
+       "https://i.imgur.com/dLKobij",
+       "https://i.imgur.com/gSCCST6",
+       "https://i.imgur.com/QDsYexo",
+       "https://i.imgur.com/AVn2XPj",
     ]
 };
-export { apartments_images };
+export { apartments_images, kamenjak, garden };

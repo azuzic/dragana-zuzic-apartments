@@ -2,6 +2,10 @@ import { createApp } from "vue";
 import router from "./router";
 import App from "./App.vue";
 
+//VUE PAGINATE
+import VueAwesomePaginate from "vue-awesome-paginate";
+import "vue-awesome-paginate/dist/style.css";
+
 //GLOBAL COMPONENTS
 import DZ_Footer from '@/components/Global/DZ_Footer.vue';
 import DZ_Block from '@/components/Global/DZ_Block.vue';
@@ -23,6 +27,7 @@ app.component('DZ_Block', DZ_Block)
 app.component('DZ_hr', DZ_hr)
 app.component('DZ_a', DZ_a)
 
+app.use(VueAwesomePaginate);
 app.use(router);
 app.use(pinia);
 

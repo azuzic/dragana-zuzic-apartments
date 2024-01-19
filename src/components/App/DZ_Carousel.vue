@@ -9,16 +9,19 @@ const globalStore = useGlobalStore()
         <div class="absolute z-50 right-4" @click="globalStore.images=[]; globalStore.activeImage=0;">
             <i class="fa-solid fa-circle-xmark text-3xl text-rose-700 cursor-pointer hover:text-rose-600 hover:scale-110 transition-150"></i>
         </div>
-        <carousel v-if="globalStore.images.length > 0" class="relative flex-center-full carousel2" :pauseAutoplayOnHover="true"
+        <carousel v-if="globalStore.images.length > 0 && false" class="relative flex-center-full carousel2" :pauseAutoplayOnHover="true"
             :items-to-show="1" :wrapAround="true" :transition="750" :modelValue="globalStore.activeImage" >
-            <slide v-for="slide in globalStore.images" :key="slide">
-                <div :style="'background-image: url('+slide+')'" class="bg-contain w-full h-full bg-no-repeat bg-center"></div>
+            <slide v-for="slide, i in globalStore.images" :key="slide">
+                <div :style="'background-image: url('+globalStore.images[globalStore.activeImage]+'.jpg)'" class="bg-contain w-full h-full bg-no-repeat bg-center">
+                </div>
             </slide>                   
             <template #addons>
                 <navigation />
                 <pagination />
             </template>
         </carousel>
+        <div :style="'background-image: url('+globalStore.images[globalStore.activeImage]+'.jpg)'" class="bg-contain w-full h-full bg-no-repeat bg-center">
+        </div>
     </div>
 </template>
 <script>
