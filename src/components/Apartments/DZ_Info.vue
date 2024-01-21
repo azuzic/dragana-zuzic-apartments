@@ -40,7 +40,7 @@
                 <li>
                     <i class="fa-solid fa-user-plus mr-0.5"></i> 
                     Price for <u>extra <b>1</b> person</u> is 
-                    <span class="text-gradient-700"><b>11</b> € / <b>1</b> day</span>
+                    <span class="text-gradient-700"><b>15</b> € / <b>1</b> day</span>
                 </li>
                 <li>
                     <i class="fa-solid fa-registered mr-1"></i> 

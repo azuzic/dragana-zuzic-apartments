@@ -5,26 +5,26 @@ let apartments = [
     {
         name: "Terasa",
         img: apartments_images.terasa[0],
-        capacity: "2-4"
+        capacity: "2+1"
     },
     {
         name: "Kamin",
-        img: apartments_images.kamin[1],
+        img: apartments_images.kamin[0],
         capacity: "2"
     },
     {
         name: "Smokva",
-        img: apartments_images.smokva[5],
+        img: apartments_images.smokva[2],
         capacity: "4"
     },
     {
         name: "Azzuro",
         img: apartments_images.azzuro[0],
-        capacity: "2-4"
+        capacity: "2+1"
     },
     {
         name: "Sole",
-        img: apartments_images.sole[0],
+        img: apartments_images.sole[1],
         capacity: "2"
     }
 ]

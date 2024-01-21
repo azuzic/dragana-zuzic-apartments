@@ -26,7 +26,7 @@ const currentPage = ref(1);
                 class="h-32 sm:h-52 w-1/2 sm:w-1/3 p-1"
                 @click="globalStore.images=globalStore.apartment.images; globalStore.activeImage=i;">
                     <div class="relative rounded-lg drop-shadow-sm hover:drop-shadow-lg hover:scale-110 hover:z-50 
-                        transition-300 bg-cover-center wh-full cursor-pointer"
+                        transition-300 bg-contain bg-center bg-no-repeat wh-full cursor-pointer"
                         :style="'background-image: url('+img+'l.jpg);'">
                     </div>  
                 </div>                                  

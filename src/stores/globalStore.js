@@ -14,65 +14,93 @@ export const useGlobalStore = defineStore("globalStore", {
                 name: "Terasa",
                 images: apartments_images.terasa,
                 amenities: [
-                    `Has an <span class="text-gradient-700"> <b>air conditioner</b> <i class="fa-solid fa-wind ml-1"></i></span>`,
-                    `Has a room with <b>1<span class="text-gradient-700"> double-sized bed<i class="fa-solid fa-bed ml-1"></i></span></b>`, 
-                    `Has a living room with <b>2</b> sofas that can transform into 
-                    <span class="text-gradient-700"><b>one-sized beds <i class="fa-solid fa-bed ml-1"></i></b></span> 
-                    and <b>1 <span class="text-gradient-700">TV<i class="fa-solid fa-tv ml-1"></i></span></b>`,
-                    `<span class="text-gradient-700"><b>Bathroom</b> <i class="fa-solid fa-restroom ml-1"></span>`,
-                    `<span class="text-gradient-700"><b>Kitchen</b> <i class="fa-solid fa-blender ml-1"></span>` 
+                    `
+                    <div class="amenities">
+                        <i class="fas fa-home"></i> Apartment Terasa - 45m<sup>2</sup><br>
+                        <i class="fas fa-bed"></i> 1 Bedroom with Double Bed (180*200cm)<br>
+                        <i class="fas fa-couch"></i> Living Room with sofa with one normal bed<br>
+                        <i class="fas fa-utensils"></i> Kitchen with big refrigerator/freezer<br>
+                        <i class="fas fa-bath"></i> Bathroom<br>
+                        <i class="fas fa-tv"></i> TV-SAT<br>
+                        <i class="fas fa-snowflake"></i> Air Conditioner<br>
+                        <i class="fas fa-chalkboard"></i> Big Terrace - 25m<sup>2</sup>, 1st floor, separate entrance<br>
+                        <i class="fas fa-car"></i> Parking Place
+                    </div>
+                    ` 
                 ]
             },
             {
                 name: "Kamin",
                 images: apartments_images.kamin,
                 amenities: [
-                    `Has an <span class="text-gradient-700"> <b>air conditioner</b> <i class="fa-solid fa-wind ml-1"></i></span>`,
-                    `Has a room with <b>1<span class="text-gradient-700"> double-sized bed<i class="fa-solid fa-bed ml-1"></i></span></b>`, 
-                    `Has a living room with <b>2</b> sofas that can transform into 
-                    <span class="text-gradient-700"><b>one-sized beds <i class="fa-solid fa-bed ml-1"></i></b></span> 
-                    and <b>1 <span class="text-gradient-700">TV<i class="fa-solid fa-tv ml-1"></i></span></b>`,
-                    `<span class="text-gradient-700"><b>Bathroom</b> <i class="fa-solid fa-restroom ml-1"></span>`,
-                    `<span class="text-gradient-700"><b>Kitchen</b> <i class="fa-solid fa-blender ml-1"></span>` 
+                    `
+                    <div class="amenities">
+                        <i class="fas fa-home"></i> Apartment Kamin - 30m<sup>2</sup><br>
+                        <i class="fas fa-bed"></i> 1 Living Bedroom with Double Bed (160*200cm) and sofa <br>
+                        <i class="fas fa-utensils"></i> Kitchen with big refrigerator/freezer<br>
+                        <i class="fas fa-bath"></i> Bathroom<br>
+                        <i class="fas fa-tv"></i> TV-SAT<br>
+                        <i class="fas fa-snowflake"></i> Air Conditioner<br>
+                        <i class="fas fa-chalkboard"></i> Big Terrace - 20m<sup>2</sup>, ground floor, separate entrance<br>
+                        <i class="fas fa-car"></i> Parking Place
+                    </div>
+                    ` 
                 ]
             },
             {
                 name: "Smokva",
                 images: apartments_images.smokva,
                 amenities: [
-                    `Has an <span class="text-gradient-700"> <b>air conditioner</b> <i class="fa-solid fa-wind ml-1"></i></span>`,
-                    `Has a room with <b>1<span class="text-gradient-700"> double-sized bed<i class="fa-solid fa-bed ml-1"></i></span></b>`, 
-                    `Has a living room with <b>2</b> sofas that can transform into 
-                    <span class="text-gradient-700"><b>one-sized beds <i class="fa-solid fa-bed ml-1"></i></b></span> 
-                    and <b>1 <span class="text-gradient-700">TV<i class="fa-solid fa-tv ml-1"></i></span></b>`,
-                    `<span class="text-gradient-700"><b>Bathroom</b> <i class="fa-solid fa-restroom ml-1"></span>`,
-                    `<span class="text-gradient-700"><b>Kitchen</b> <i class="fa-solid fa-blender ml-1"></span>` 
+                    `
+                    <div class="amenities">
+                        <i class="fas fa-home"></i> Apartment Smokva - 45m<sup>2</sup><br>
+                        <i class="fas fa-bed"></i> 1 Bedroom with Double Bed (180*200cm)<br>
+                        <i class="fas fa-bed"></i> 1 Bedroom with 2 separate beds (90*200cm)<br>
+                        <i class="fas fa-utensils"></i> Kitchen with big refrigerator/freezer<br>
+                        <i class="fas fa-bath"></i> Bathroom<br>
+                        <i class="fas fa-tv"></i> TV-SAT<br>
+                        <i class="fas fa-snowflake"></i> Air Conditioner<br>
+                        <i class="fas fa-chalkboard"></i> Big Terrace - 20m<sup>2</sup>, ground floor, separate entrance<br>
+                        <i class="fas fa-car"></i> Parking Place
+                    </div>
+                    ` 
                 ]
             },
             {
                 name: "Azzuro",
                 images: apartments_images.azzuro,
                 amenities: [
-                    `Has an <span class="text-gradient-700"> <b>air conditioner</b> <i class="fa-solid fa-wind ml-1"></i></span>`,
-                    `Has a room with <b>1<span class="text-gradient-700"> double-sized bed<i class="fa-solid fa-bed ml-1"></i></span></b>`, 
-                    `Has a living room with <b>2</b> sofas that can transform into 
-                    <span class="text-gradient-700"><b>one-sized beds <i class="fa-solid fa-bed ml-1"></i></b></span> 
-                    and <b>1 <span class="text-gradient-700">TV<i class="fa-solid fa-tv ml-1"></i></span></b>`,
-                    `<span class="text-gradient-700"><b>Bathroom</b> <i class="fa-solid fa-restroom ml-1"></span>`,
-                    `<span class="text-gradient-700"><b>Kitchen</b> <i class="fa-solid fa-blender ml-1"></span>` 
+                    `
+                    <div class="amenities">
+                        <i class="fas fa-home"></i> Apartment Azzuro - 40m<sup>2</sup><br>
+                        <i class="fas fa-bed"></i> 1 Bedroom with Double Bed (160*200cm)<br>
+                        <i class="fas fa-couch"></i> Living Room with sofa<br>
+                        <i class="fas fa-utensils"></i> Kitchen with big refrigerator/freezer<br>
+                        <i class="fas fa-bath"></i> Bathroom<br>
+                        <i class="fas fa-tv"></i> TV-SAT<br>
+                        <i class="fas fa-snowflake"></i> Air Conditioner<br>
+                        <i class="fas fa-chalkboard"></i> Big Terrace - 12m<sup>2</sup>, ground floor, separate entrance<br>
+                        <i class="fas fa-car"></i> Parking Place
+                    </div>
+                    ` 
                 ]
             },
             {
                 name: "Sole",
                 images: apartments_images.sole,
                 amenities: [
-                    `Has an <span class="text-gradient-700"> <b>air conditioner</b> <i class="fa-solid fa-wind ml-1"></i></span>`,
-                    `Has a room with <b>1<span class="text-gradient-700"> double-sized bed<i class="fa-solid fa-bed ml-1"></i></span></b>`, 
-                    `Has a living room with <b>2</b> sofas that can transform into 
-                    <span class="text-gradient-700"><b>one-sized beds <i class="fa-solid fa-bed ml-1"></i></b></span> 
-                    and <b>1 <span class="text-gradient-700">TV<i class="fa-solid fa-tv ml-1"></i></span></b>`,
-                    `<span class="text-gradient-700"><b>Bathroom</b> <i class="fa-solid fa-restroom ml-1"></span>`,
-                    `<span class="text-gradient-700"><b>Kitchen</b> <i class="fa-solid fa-blender ml-1"></span>` 
+                    `
+                    <div class="amenities">
+                        <i class="fas fa-home"></i> Apartment Sole - 35m<sup>2</sup><br>
+                        <i class="fas fa-bed"></i> 1 Living Bedroom with Double Bed (160*200cm) <br>
+                        <i class="fas fa-utensils"></i> Kitchen with big refrigerator/freezer<br>
+                        <i class="fas fa-bath"></i> Bathroom<br>
+                        <i class="fas fa-tv"></i> TV-SAT<br>
+                        <i class="fas fa-snowflake"></i> Air Conditioner<br>
+                        <i class="fas fa-chalkboard"></i> Big Terrace - 8m<sup>2</sup>, ground floor, separate entrance<br>
+                        <i class="fas fa-car"></i> Parking Place
+                    </div>
+                    ` 
                 ]
             }
         ]

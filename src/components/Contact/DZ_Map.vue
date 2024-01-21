@@ -1,5 +1,5 @@
 <script setup>
-import map from "@/assets/map.png";
+import map from "@/assets/map.jpg";
 /*
 // Initialize and add the map
 function initMap() {

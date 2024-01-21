@@ -14,10 +14,10 @@ const itemsPerPage = 12;
                 Nestled in this charming locale, 
                 <span class="text-gradient-600 font-medium">APARTMENTS DRAGANA</span>
                 is a visually appealing 
-                and guest-friendly accommodation, conveniently located just 300 meters from 
+                and guest-friendly accommodation, conveniently located just 500 meters from 
                 the beach. Our property combines aesthetic charm with comfort, offering a 
                 welcoming retreat for our guests. Discover a delightful stay that harmoniously 
-                blends style and convenience.
+                blends style and convenience. Welcome!
             </div>
 
             
@@ -33,7 +33,7 @@ const itemsPerPage = 12;
                     :class="[(i<(currentPage-1)*itemsPerPage+itemsPerPage) && i>=(currentPage-1)*itemsPerPage ? '' : 'hidden']"
                     @click="globalStore.images=garden; globalStore.activeImage=i;">
                     <div class="relative rounded-lg drop-shadow-sm hover:drop-shadow-lg hover:scale-110 hover:z-50 
-                        transition-300 bg-cover-center wh-full cursor-pointer"
+                        transition-300 bg-contain bg-center bg-no-repeat wh-full cursor-pointer"
                         :style="'background-image: url('+img+'l.jpg);'">
                     </div>  
                 </div>                                  
